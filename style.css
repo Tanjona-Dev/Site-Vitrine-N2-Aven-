@@ -19,6 +19,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    z-index: 100;
 }
 .toggleNavBar{
     position: fixed;
@@ -360,16 +361,17 @@ h4{
         flex-direction: column;
         align-items: center;
     }
-    .imageParti4 img {
+    .imageParti4 .imageContenair, .imageParti4 .imageContenair1, .imageParti4 .imageContenair2 {
         width: 80%;
     }
     .imageParti5{
         flex-direction: column;
         align-items: center;
     }
-    .imageParti5 img{
+    .imageParti5 .imageContenair3, .imageParti5 .imageContenair4, .imageParti5 .imageContenair5{
         width: 80%;
     }
+    
 }
 
 .partie4{
@@ -384,9 +386,188 @@ h4{
 }
 
 
+/* ------------------EFFET SUR LES IMAGES DE PROPERTY GALLERY-------- */
+.imageContenair{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+.imageContenair img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+/* -------------------------- */
+.imageContenair1{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+.imageContenair1 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+/* -------------------------- */
+.imageContenair2{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+.imageContenair2 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+/* -------------------------- */
+.imageContenair3{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+.imageContenair3 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.overlay3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+/* -------------------------- */
+.imageContenair4{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+.imageContenair4 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.overlay4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+/* -------------------------- */
+.imageContenair5{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+.imageContenair5 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */ 
+/* SERVICES */
+
+.services{
+    background-color: rgb(128, 128, 128, 0.1);
+    padding-bottom: 2%;
+    padding-top: 2%;
+    overflow: hidden;
+    
+}
+.boxeService img{
+    width: 8%;
+}
+.boxeService p{
+    color: gray;
+    font-style: italic;
+}
+.boxeService1{
+    min-width: 300px;
+    height: 180px;
+    margin-top: 1%;
+    padding-top: 3%;
+    background-color: white;
+    line-height: 2em;
+}
+.boxeService2{
+    min-width: 300px;
+    height: 180px;
+    margin-top: 1%;
+    padding-top: 3%;
+    background-color: white;
+    line-height: 2em;
+}
+.boxeService{
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 2%;
+    width: 50%;
+    margin: auto;
+    padding: 1px;
+
+} 
+#btnNext{
+    width: 2%;
+    position: relative;
+    left: 30%;
+    bottom: 150px;
+   
+}
 
 

@@ -5,19 +5,9 @@ let boite3 = document.querySelector(".boite3")
 let boite4 = document.querySelector(".boite4")
 let boite5 = document.querySelector(".boite5")
 let boite6 = document.querySelector(".boite6")
+let cube = document.querySelector(".cube")
 
-function testeScroll(){
-    document.addEventListener("scroll",()=>{
-       let valeur = window.scrollY
-       if(valeur > 893){
-           navBar.classList.add("toggleNavBar")
-       }else{
-        navBar.classList.remove("toggleNavBar")
-       }
-    })
 
-}
-testeScroll()
 
 function ajouterDesBoites(valeur){
     valeur.addEventListener("mouseenter", ()=>{
@@ -55,7 +45,36 @@ function homeMouse(){
        
     })
 }
-// homeMouse()
+// ---------------------SCROLL-----------------------------------
+
+let imageContenair = document.querySelector(".imageContenair")
+let imageContenair1 = document.querySelector(".imageContenair1")
+let imageContenair2 = document.querySelector(".imageContenair2")
+let imageContenair3 = document.querySelector(".imageContenair3")
+let imageContenair4 = document.querySelector(".imageContenair4")
+let imageContenair5 = document.querySelector(".imageContenair5")
+
+let overlay = document.querySelector(".overlay")
+let overlay1 = document.querySelector(".overlay1")
+let overlay2 = document.querySelector(".overlay2")
+let overlay3 = document.querySelector(".overlay3")
+let overlay4 = document.querySelector(".overlay4")
+let overlay5 = document.querySelector(".overlay5")
 
 
+function overlayAjout (conteneur, boite){
+    conteneur.addEventListener("mouseover",()=>{
+        boite.style.opacity = "1"
+    })
+    conteneur.addEventListener("mouseleave", ()=>{
+        boite.style.opacity = "0"
+    })
+}
+
+overlayAjout(imageContenair, overlay)
+overlayAjout(imageContenair1, overlay1)
+overlayAjout(imageContenair2, overlay2)
+overlayAjout(imageContenair3, overlay3)
+overlayAjout(imageContenair4, overlay4)
+overlayAjout(imageContenair5, overlay5)
 
