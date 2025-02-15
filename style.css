@@ -616,6 +616,12 @@ h4{
     .boxeService{
         width: 300px;
     }
+    #btnPreview{
+        display: none;
+    }
+    #btnNext{
+        display: none;
+    }
 }
 /* ---------------------------------------Formulaire 2--------------------------------- */
 .form2 .formulaireBouttonFlex form{
@@ -702,9 +708,29 @@ h4{
     margin: auto;
     gap: 6%;
     padding-top: 5%;
+
 }
     .fotterFotter .contenu{
         width: 200px
+    }
+}
+
+@media (max-width: 493px) {
+    .fotterFotter{
+        width: 90%;
+    }
+}
+@media (max-width: 430px) {
+    .fotterFotter{
+        padding-left: 23px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100px;
+        
+    }
+ 
+    #footerLogoMenu{
+        padding-top: 18px;
     }
 }
 
