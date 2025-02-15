@@ -714,26 +714,12 @@ h4{
         width: 200px
     }
 }
-
-@media (max-width: 430px) {
-    .fotterFotter{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 0;
-        margin-left: 0;
-        padding-left: 0;
-        padding-right: 0;
-       width: 400px;
-       text-align: center;
-       justify-content: center;
-       gap: 0px;
-
-    }
-    #footerLogoMenu{
-        padding-top: 18px;
+@media (max-width: 443px) {
+    .fotterFotter .contenu{
+        width: 95%;
+        text-align: center;
     }
 }
-
 /* -------------------------------------------LOADERS DE LA PAGE---------------------------- ------*/
 #loader{
     position: fixed;
