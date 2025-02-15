@@ -59,7 +59,6 @@ a{
     width: 50%;
     height: auto;
     margin-left: 15%;
-
 }
 .btnViewGalery{
     background: linear-gradient(to right, #4A90E6, #6A5ACD);
@@ -100,7 +99,7 @@ span{
         width: auto;
         height: 30px;
         position: absolute;
-        left: 90%;
+        left: 80%;
     }
 }
 
@@ -199,6 +198,7 @@ form img{
     .headers2{
         display: none;
     }
+
 }
 /* ------------------------------------------------------------------------------------------ */
 
@@ -260,7 +260,7 @@ h4{
 
 /* --------------------------------------------------------------------------------------------------- */
 
-/* Agent Details */
+/* --------------------------------------------Agent Details */
 
 .agentDetails{
  background-color: rgb(0, 0, 0, 0.9);
@@ -274,7 +274,10 @@ h4{
  min-height: 60vh;
  overflow: hidden;
 }
-
+.agentDetails h1{
+    width: 80%;
+    font-size: 2em;
+}
 .agentDetails img{
     max-width: 250px;
     border-radius: 10px;
@@ -305,7 +308,7 @@ h4{
 }
 .btnContact{
     background: linear-gradient(to right, #4A90E6, #6A5ACD);
-    width: 30%;
+    width: 120px;
     height: 12%;
     border: none;
     border-radius: 50px;
@@ -404,8 +407,6 @@ h4{
     display: inline-block;
 
 }
-
-
 /* ------------------EFFET SUR LES IMAGES DE PROPERTY GALLERY-------- */
 .imageContenair{
     position: relative;
@@ -417,7 +418,6 @@ h4{
     width: 100%;
     height: auto;
 }
-
 .overlay{
     position: absolute;
     top: 0;
@@ -565,6 +565,7 @@ h4{
     background-color: white;
     line-height: 2em;
 }
+
 .boxeService2{
     min-width: 300px;
     height: 180px;
@@ -611,6 +612,11 @@ h4{
     right: 29%;
     bottom: 250px;
 }
+@media (max-width: 596px) {
+    .boxeService{
+        width: 300px;
+    }
+}
 /* ---------------------------------------Formulaire 2--------------------------------- */
 .form2 .formulaireBouttonFlex form{
     margin-top: 3%;
@@ -637,6 +643,13 @@ h4{
     width: 202%;
     height:150px ;
 
+}
+.form2 h1{
+    font-size: 1.2em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 @media (max-width: 995px) {
     .form2 .formulaireBouttonFlex form #textarea{
