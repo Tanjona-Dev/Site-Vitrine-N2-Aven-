@@ -124,3 +124,9 @@ document.addEventListener("scroll", ()=>{
     ul.classList.remove("display")
 })
 
+// -----------------------------------------LOADERS DE MA PAGE-----------------------------------
+
+window.addEventListener("load", ()=>{
+   let loader = document.getElementById("loader")
+    loader.style.display = "none"
+})
