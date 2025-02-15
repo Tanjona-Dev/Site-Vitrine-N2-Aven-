@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- TESTE MAP -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="index.js" defer></script>
 </head>
 <body>
@@ -17,24 +21,25 @@
                 <img src="images/logos/logo.png" alt="" class="logo">
             </div>
             <div class="logoMenu">
-             <img src="images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
+             <img src="images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="" id="logoMenu0">
             </div>
             <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Features *</li>
-                    <li>The Agent</li>
-                    <li>Gallery</li>
-                    <li>Testimonials</li>
-                    <li>Contact</li>
-                    <li><img src="images/linkedin-in-brands-solid.svg" alt=""></li>
-                    <li><img src="images/twitter-brands-solid.svg" alt=""></li>
-                    <li><img src="images/facebook-f-brands-solid.svg" alt="" class="fbLogo"></li>
+                <ul class="liste">
+                    <a href="#ss0"> <li>Home</li></a>
+                    <a href="#ss1"><li>Features *</li></a>
+                    <a href="#ss2"><li>The Agent</li></a>
+                    <a href="#ss3"><li>Gallery</li></a>
+                    <a href="#ss4"><li>Testimonials</li></a>
+                    <a href="#ss5"><li>Contact</li></a>
+                    <a href=""><li><img src="images/linkedin-in-brands-solid.svg" alt=""></li></a>
+                    <a href=""> <li><img src="images/twitter-brands-solid.svg" alt=""></li></a>
+                    <a href=""><li><img src="images/facebook-f-brands-solid.svg" alt="" class="fbLogo"></li></a>
+                    
                 </ul>
            </div>
         </section>
 
-        <section class="headers2">
+        <section class="headers2" id="ss0">
             <div>
                 <h1><b>Sell Your Property
                     <br> with Aven</b></h1><br>
@@ -73,10 +78,10 @@
     </header><br>
 
     <!--Debut Main -->
-    <main>
-        <section class="mainS1">
+    <main id="ss1">
+        <section class="mainS1" id="ss1">
             <div>
-                <h4>ALL AWESOME PROPERTY DETAILS</h4><br>
+                <h4 id="ss1">ALL AWESOME PROPERTY DETAILS</h4><br>
                 <h2>Property Details</h2>
             </div><br>
 
@@ -127,7 +132,7 @@
                 <div>
                     <img src="uploads/estate_03.jpg" alt="">
                     <h6>In Forests- Fresh Clean Air</h6>
-                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                    <p id="ss2">Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
                 </div>
             </div>
 
@@ -135,7 +140,7 @@
             <img class="triangle2" src="images/triangle2.png" alt="">
             <section class="agentDetails">
                 <div>
-                    <h1>Agent Details</h1><br>
+                    <h1 >Agent Details</h1><br>
                     <br>
                     <p>
                         Quisque eget nifsfsdfssl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a
@@ -182,12 +187,12 @@
                 </div>    
             </section>
             <img class="triangleRenverse" src="images/triangleRenverse.jpg" alt="">
-
+            <p id="ss3"></p>
 <!-- ---------------------------------PROPERTY GALLERY--------------------------------------------------------------------------------------------------------------- -->
         </section>
         <section class="partie4" >
             <div>
-                <h1>Property Gallery</h1>
+                <h1 >Property Gallery</h1>
                 <br><br>
 
                 <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
@@ -230,11 +235,11 @@
             </div>
         
         </section>
-
+        <p id="ss4"></p>
 <!-- --------------------------------------HAPPY CUSTOMERS-------------------------------------------------------------------------------------------------------------------- -->
         <section class="services">
-            <div>
-                <h5>Happy Customers</h5>
+            <div >
+                <h5 id="happy">Happy Customers</h5>
                 <br>
                 <p>
                     Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.
@@ -245,42 +250,155 @@
                     <img src="images/quote-left-solid.svg" alt="">
                     Wonderful Support!
                     <p>They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                    <h3>James Fernando</h3>
+                    <p>- Manager of Racer</p>
                 </div>
                 <div class="boxeService1">
                     <img src="images/quote-left-solid.svg" alt="">
                     Awesome Services!
                     <p>Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you completed</p>
+                    <h3>Jacques Philips</h3>
+                    <p>- Designer</p>
                 </div>
                 <div class="boxeService2">
                     <img src="images/quote-left-solid.svg" alt="">
                     Great & Talented Team!
                     <p>The master-builder of human happines no one rejects, dislikes avoids pleasure itself, beacause it is very pursue pleasure.</p>
+                    <h3>Venanda Mercy</h3>
+                    <p>- Newyork City</p>
                 </div>  
                 <div class="boxeService1">
                     <img src="images/quote-left-solid.svg" alt="">
                     Wonderful Support !
                     <p>They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                    <h3>James Fernando</h3>
+                    <p>-Manager of Racer</p>
                 </div>
                 <div class="boxeService1">
                     <img src="images/quote-left-solid.svg" alt="">
                     Awesome Services!
                     <p>Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and i will give you completed</p>
+                    <h3>Jacques Philips</h3>
+                    <P>- Designer</P>
                 </div>
                 <div class="boxeService1">
                     <img src="images/quote-left-solid.svg" alt="">
                     Great & Talented Team!
                     <p>The master-builder of human happines no one rejects, dislikes avoids pleasure itself, beacause it is very pursue pleasure.</p>
+                    <h3>Venanda Mercy</h3>
+                    <p>- Newyork City</p>
                 </div>  
            </div>
            <div>
                 <img src="images/prettyPhoto/default/sprite_next.png" alt="" id="btnNext">
            </div>
-           <button onclick="testescroll()">ScrollDroite</button>
+           <div>
+                <img src="images/prettyPhoto/default/sprite_prev.png" alt="" id="btnPreview">
+           </div>
+        
            
         </section>
+
     </main>
     <footer>
-   
+        <section>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+        </section>
+        <p id="ss5"></p>
+
+        <section class="form2">
+            <h1>Get an Appointement Today</h1>
+            <p>Let us give you more details about the sepcial offer website your want us. Please fill out the form bellow. We have million of website owners who happy to work with us!</p>
+            
+            <div class="formulaireBouttonFlex">
+                <form action="">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    
+                    <input type="email" placeholder="Your Email">
+                    <input type="number" placeholder="Your Phone">
+                    
+                    <select name="" id="">
+                        <option value="">Select Time</option>
+                        <option value="">Weekdays</option>
+                        <option value="">Weekend</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">$100 - $2000</option>
+                        <option value="">$2000 - 4000$</option>
+                        <option value="">$4000 - $10000</option>
+                    </select>
+                    <input type="text" placeholder="Give us more details.." id="textarea"><br>
+                    <input type="submit" value="Get an Appointement" class="btnSubmit">
+                </form>
+            </div>
+        </section>
+
+        <section class="backgroundFotterFotter">
+            <section class="fotterFotter">
+                <div class="contenu">
+                    <img src="images/logos/logo.png" alt="" id="footerLogoMenu"><br><br>
+                    <p>Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                    <p>Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                </div>
+                <div class="contenu">
+                    <br>
+                    <h3>Contact Details</h3>
+                    <br>
+                    <a href="">info@yoursite.com</a>
+                    <br>
+                    
+                    <p>-------------------------</p>
+                    <br>
+                    <a href="">www.yoursite.com</a>
+                    <br>
+                    <p>-------------------------</p>
+                    <br>
+                    <address>Po Box 16122 collins Street West Victoria 8007 Australia</address>
+                    
+                    <p>-------------------------</p>
+                    <br>            
+                    <p>+61 3 8376 6284</p>
+                    <br>
+                </div>
+                <div class="contenu">
+                    <br>
+                    <h3>Twiter Feed</h3>
+                    <br>
+                    <img src="images/twitter-brands-solid.svg" alt="" id="petitIcone">
+                    <a href="">@Rt_miOnline o zaman en yakın Apple Store seni bekler geçmiş olsun</a>
+                    <br><br>
+                    <img src="images/twitter-brands-solid.svg" alt="" id="petitIcone">
+                    <a href="">@Harry - Thanks you so much for your help. Still waiting update for my Ticket!</a>
+                    <br><br>
+                    <img src="images/twitter-brands-solid.svg" alt="" id="petitIcone">
+                    <a href="">@MedyaPet - Welcome to the our community dude! You are awesome!</a>
+    
+                </div>
+                <div class="contenu">
+                    <br>
+                    <h3>Social</h3>
+                    <br>
+                    <img src="images/facebook-f-brands-solid.svg" alt="" id="petitIcone2">
+                    <a href="">22.543 Likes</a>
+                    <br><br>
+                    <img src="images/github-brands-solid.svg" alt="" id="petitIcone">
+                    <a href="">128 Projects</a>
+                    <br><br>
+                    <img src="images/twitter-brands-solid.svg" alt="" id="petitIcone">
+                    <a href="">12.860 Followers</a>
+                    <br><br>
+                    <img src="images/basketball-solid.svg" alt="" id="petitIcone">
+                    <a href="">3312 Shots</a>
+                    <br><br>
+                    <img src="images/pinterest-brands-solid.svg" alt="" id="petitIcone">
+                    <a href="">3331 Pins</a>
+                    
+    
+                </div>
+            </section>
+        </section>
+        
     </footer>
 </body>
 </html>

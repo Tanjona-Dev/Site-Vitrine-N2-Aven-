@@ -7,6 +7,18 @@ let boite5 = document.querySelector(".boite5")
 let boite6 = document.querySelector(".boite6")
 let cube = document.querySelector(".cube")
 
+document.addEventListener("scroll", ()=>{
+
+    let valeur = window.scrollY
+    if(valeur > 899){
+        navBar.classList.add("toggleNavBar")
+       
+    }else{
+        navBar.classList.remove("toggleNavBar")
+    }
+})
+
+
 
 
 function ajouterDesBoites(valeur){
@@ -37,14 +49,7 @@ let home5 = document.querySelector("#home5")
 let hone6 = document.querySelector("#home6")
 let boxDeplacant = document.querySelector("#boxDeplacant")
 
-function homeMouse(){
-    home1.addEventListener("mousemove", (e)=>{
-        console.log(e.clientX);
-        if (e.clientX >= 400)
-       console.log("mety");
-       
-    })
-}
+
 // ---------------------SCROLL-----------------------------------
 
 let imageContenair = document.querySelector(".imageContenair")
@@ -77,4 +82,46 @@ overlayAjout(imageContenair2, overlay2)
 overlayAjout(imageContenair3, overlay3)
 overlayAjout(imageContenair4, overlay4)
 overlayAjout(imageContenair5, overlay5)
+
+// SCROLLER LE BOXSERVICE----------------------------------------------------------------------------
+
+let boxeService = document.querySelector(".boxeService")
+let btnNext = document.getElementById("btnNext")
+let btnPreview = document.getElementById("btnPreview")
+
+btnNext.addEventListener("click", ()=>{
+    boxeService.scrollLeft += 320
+    
+})
+btnPreview.addEventListener("click", ()=>{
+    boxeService.scrollLeft -= 320
+})
+
+
+  // Initialise la carte et centre-la sur une position (latitude, longitude)
+  var map = L.map('map').setView([48.8566, 2.3522], 13); // Paris
+
+  // Ajoute une couche de tuiles OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Ajoute un marqueur
+  L.marker([48.8566, 2.3522]).addTo(map)
+    .bindPopup('Hello Paris!')
+    .openPopup();
+
+
+// RENDRE LE BOUTTON MENU CLIQUABLE
+let logoMenu = document.querySelector(".logoMenu")
+let ul = document.querySelector(".liste")
+
+logoMenu.addEventListener("click", ()=>{
+    ul.classList.toggle("display")
+})
+
+document.addEventListener("scroll", ()=>{
+    ul.classList.remove("display")
+})
+
 
